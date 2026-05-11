@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Joyful Explorer is a personal travel journal with real notes, photos, restaurants, city memories, and quiet thoughts from the road.">
+  <meta name="theme-color" content="#17342d">
+  <title>The Joyful Explorer | Notes From The Road</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top journal-nav" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="The Joyful Explorer home">
+        <span class="brand-mark"><i class="bi bi-compass"></i></span>
+        <span>
+          <strong>The Joyful Explorer</strong>
+          <small>Notes From The Road</small>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journal">Journal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cities">Cities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#restaurants">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link" href="#photos">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#thoughts">Thoughts</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill" href="#subscribe">Follow Notes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-reel" id="home">
+    <div class="hero-bg active" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=2400&q=85');"></div>
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2400&q=85');"></div>
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2400&q=85');"></div>
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=2400&q=85');"></div>
+    <div class="hero-shade"></div>
+
+    <div class="container hero-content">
+      <div class="row min-vh-100 align-items-center g-5 pt-5">
+        <div class="col-lg-7">
+          <div class="hero-copy reveal-up">
+            <div class="eyebrow"><span></span> Personal travel journal</div>
+            <h1>Real travel notes, saved before the moments fade.</h1>
+            <p class="lead">A quiet online journal for cities, pictures, restaurants, sentiments, and the small details that make each trip worth remembering.</p>
+            <div class="hero-actions d-flex flex-wrap gap-3">
+              <a href="#journal" class="btn btn-journey">Start Reading</a>
+              <a href="#photos" class="btn btn-ghost-light">View Photo Wall</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="travel-console reveal-up reveal-delay-1">
+            <div class="console-top">
+              <span class="status-dot"></span>
+              <span>Current memory board</span>
+              <button class="mini-control" type="button" id="pauseHero" aria-label="Pause slideshow"><i class="bi bi-pause-fill"></i></button>
+            </div>
+            <div class="route-card">
+              <div>
+                <small>Next note</small>
+                <h2>Paris evening walk</h2>
+              </div>
+              <span class="route-icon"><i class="bi bi-geo-alt"></i></span>
+            </div>
+            <div class="route-line">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="console-grid">
+              <article>
+                <strong data-count="32">0</strong>
+                <small>Cities</small>
+              </article>
+              <article>
+                <strong data-count="118">0</strong>
+                <small>Photos</small>
+              </article>
+              <article>
+                <strong data-count="64">0</strong>
+                <small>Notes</small>
+              </article>
+            </div>
+            <div class="memory-strip" aria-label="Travel image preview strip">
+              <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=500&q=80" alt="London street memory">
+              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=500&q=80" alt="Italian cliffside town">
+              <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=500&q=80" alt="Quiet Japan street">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#intro" class="scroll-cue" aria-label="Scroll to introduction"><i class="bi bi-arrow-down"></i></a>
+  </header>
+
+  <main>
+    <section class="intro-band section-space" id="intro">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-copy reveal-up">
+            <span class="section-tag">Why this exists</span>
+            <h2>A simple record of where I go and what I feel there.</h2>
+            <p class="intro-text">I’ve reached a point in life where I finally have the time to travel more freely. This blog keeps a record of the places I visit, the meals I remember, the streets I walk, and the small moments that would otherwise blur together.</p>
+            <div class="intro-mini-list">
+              <span><i class="bi bi-journal-text"></i> Personal notes</span>
+              <span><i class="bi bi-camera"></i> Real memories</span>
+              <span><i class="bi bi-cup-hot"></i> Meals and places</span>
+            </div>
+          </div>
+          <div class="intro-image-wrap reveal-up reveal-delay-1">
+            <figure class="intro-image-card">
+              <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1400&q=85" alt="Travel journal notebook, map, and camera on a table">
+              <figcaption>
+                <span>Observed and remembered</span>
+                <strong>Notes before the details fade.</strong>
+              </figcaption>
+            </figure>
+            <div class="intro-floating-note">
+              <i class="bi bi-pin-angle"></i>
+              <p>Every city gets a page. Every page keeps one feeling alive.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journal-ledger section-space" id="journal">
+      <div class="container">
+        <div class="section-heading text-center reveal-up">
+          <span class="section-tag centered">Journal</span>
+          <h2>The road notebook, arranged like lived days.</h2>
+          <p>Not a travel guide. Just real notes from each city, saved as they happen.</p>
+        </div>
+
+        <div class="journal-layout reveal-up reveal-delay-1">
+          <aside class="journal-date-card">
+            <span>Today’s page</span>
+            <strong>Notes From The Road</strong>
+            <p>City details, pictures, restaurants, feelings, and quick observations.</p>
+          </aside>
+          <div class="journal-stack">
+            <article class="journal-entry active-entry">
+              <img class="entry-thumb" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=85" alt="Paris river and Eiffel Tower travel note">
+              <div>
+                <div class="entry-meta"><span class="entry-date">01</span><span class="entry-place">Paris, France</span></div>
+                <h3>Rain on the river and a late walk home</h3>
+                <p>The evening felt slow. The kind of slow that makes you look twice at windows, bridges, and people crossing the street.</p>
+              </div>
+              <a href="#" aria-label="Read Paris journal note"><i class="bi bi-arrow-up-right"></i></a>
+            </article>
+            <article class="journal-entry">
+              <img class="entry-thumb" src="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=500&q=85" alt="Kyoto street travel journal note">
+              <div>
+                <div class="entry-meta"><span class="entry-date">02</span><span class="entry-place">Kyoto, Japan</span></div>
+                <h3>A quiet lane after morning tea</h3>
+                <p>Small shops opened one by one. Nothing felt rushed. I wrote down the sound of bicycle bells.</p>
+              </div>
+              <a href="#" aria-label="Read Kyoto journal note"><i class="bi bi-arrow-up-right"></i></a>
+            </article>
+            <article class="journal-entry">
+              <img class="entry-thumb" src="https://images.unsplash.com/photo-1513735492246-483525079686?auto=format&fit=crop&w=500&q=85" alt="Lisbon city street travel note">
+              <div>
+                <div class="entry-meta"><span class="entry-date">03</span><span class="entry-place">Lisbon, Portugal</span></div>
+                <h3>Tiles, hills, and a table by the window</h3>
+                <p>A restaurant corner, a warm plate, and a street that kept turning blue as the day ended.</p>
+              </div>
+              <a href="#" aria-label="Read Lisbon journal note"><i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="city-atlas section-space" id="cities">
+      <div class="container">
+        <div class="row align-items-end mb-5 g-4">
+          <div class="col-lg-7 reveal-up">
+            <span class="section-tag">Cities</span>
+            <h2>Each city gets its own small memory drawer.</h2>
+          </div>
+          <div class="col-lg-5 reveal-up reveal-delay-1">
+            <p class="section-note">City pages can hold the day’s route, favorite streets, restaurants, pictures, and the feeling that stayed after leaving.</p>
+          </div>
+        </div>
+
+        <div class="atlas-board reveal-up reveal-delay-2">
+          <div class="atlas-feature">
+            <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1200&q=85" alt="European city street at sunset">
+            <div class="atlas-overlay">
+              <span>Featured city</span>
+              <h3>Paris</h3>
+              <p>Walks, small cafés, bridges, evening light, and the notes that come after a long day.</p>
+            </div>
+          </div>
+          <div class="atlas-list">
+            <button class="city-chip active" type="button" data-city="Paris" data-img="https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1200&q=85">Paris <span>12 notes</span></button>
+            <button class="city-chip" type="button" data-city="Kyoto" data-img="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1200&q=85">Kyoto <span>8 notes</span></button>
+            <button class="city-chip" type="button" data-city="Lima" data-img="https://images.unsplash.com/photo-1531968455001-5c5272a41129?auto=format&fit=crop&w=1200&q=85">Lima <span>6 notes</span></button>
+            <button class="city-chip" type="button" data-city="London" data-img="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85">London <span>9 notes</span></button>
+            <button class="city-chip" type="button" data-city="Santorini" data-img="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=85">Santorini <span>5 notes</span></button>
+            <button class="city-chip" type="button" data-city="Marrakesh" data-img="https://images.unsplash.com/photo-1597212720415-8e70ef38de72?auto=format&fit=crop&w=1200&q=85">Marrakesh <span>4 notes</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="restaurant-table section-space" id="restaurants">
+      <div class="container">
+        <div class="section-heading text-center reveal-up">
+          <span class="section-tag centered">Restaurants</span>
+          <h2>Meals worth remembering, without turning this into a food guide.</h2>
+          <p>Simple notes on places that felt warm, surprising, or quietly unforgettable.</p>
+        </div>
+
+        <div class="taste-grid reveal-up reveal-delay-1">
+          <article class="taste-card wide">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85" alt="Warm restaurant interior with tables">
+            <div class="taste-content">
+              <span>Corner table</span>
+              <h3>Café Bellefort</h3>
+              <p>A small dinner after a rainy walk. The windows were foggy and the room felt kind.</p>
+            </div>
+          </article>
+          <article class="taste-card">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=85" alt="Colorful bowl of fresh food">
+            <div class="taste-content">
+              <span>Best plate</span>
+              <h3>Quiet noodle shop</h3>
+            </div>
+          </article>
+          <article class="taste-card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85" alt="Prepared meal on a restaurant table">
+            <div class="taste-content">
+              <span>Late lunch</span>
+              <h3>Sea wall table</h3>
+            </div>
+          </article>
+          <article class="taste-note">
+            <i class="bi bi-cup-hot"></i>
+            <h3>What gets saved</h3>
+            <p>The dish, the street, the person serving it, the table view, and how the place felt after the meal ended.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-wall section-space" id="photos">
+      <div class="container">
+        <div class="row align-items-center mb-5 g-4">
+          <div class="col-lg-6 reveal-up">
+            <span class="section-tag">Photos</span>
+            <h2>Pictures that hold the day together.</h2>
+          </div>
+          <div class="col-lg-6 reveal-up reveal-delay-1">
+            <p class="section-note">A visual wall for quick memories: streets, water, meals, rooms, tickets, shoes, sunsets, and the scenes that need no long caption.</p>
+          </div>
+        </div>
+
+        <div class="masonry-board reveal-up reveal-delay-2">
+          <a class="photo-tile tall" href="#" aria-label="Open mountain road photo"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=85" alt="Open road between mountains"><span>Open roads</span></a>
+          <a class="photo-tile" href="#" aria-label="Open Paris photo"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85" alt="Eiffel Tower in Paris"><span>Paris light</span></a>
+          <a class="photo-tile wide" href="#" aria-label="Open lake photo"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85" alt="Calm beach and sea"><span>Soft mornings</span></a>
+          <a class="photo-tile" href="#" aria-label="Open city night photo"><img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=85" alt="City lights at night"><span>City nights</span></a>
+          <a class="photo-tile tall" href="#" aria-label="Open Kyoto street photo"><img src="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=900&q=85" alt="Traditional street in Japan"><span>Kyoto walk</span></a>
+          <a class="photo-tile" href="#" aria-label="Open boat water photo"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Boat on bright water"><span>Water days</span></a>
+          <a class="photo-tile" href="#" aria-label="Open travel food photo"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=85" alt="Colorful travel meal in a bowl"><span>Lunch memory</span></a>
+          <a class="photo-tile wide" href="#" aria-label="Open mountain lake photo"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=85" alt="Mountain lake and travel landscape"><span>Still water</span></a>
+          <a class="photo-tile" href="#" aria-label="Open train station photo"><img src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?auto=format&fit=crop&w=900&q=85" alt="Train station travel moment"><span>Station pause</span></a>
+          <a class="photo-tile tall" href="#" aria-label="Open desert road photo"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=85" alt="Desert road travel view"><span>Road silence</span></a>
+          <a class="photo-tile" href="#" aria-label="Open travel cafe photo"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85" alt="Warm cafe restaurant travel memory"><span>Café corner</span></a>
+          <a class="photo-tile" href="#" aria-label="Open sunset sea photo"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85" alt="Sunset sea beach travel photograph"><span>Evening sea</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-stories section-space" id="videos">
+      <div class="container">
+        <div class="row align-items-end mb-5 g-4">
+          <div class="col-lg-6 reveal-up">
+            <span class="section-tag">Videos</span>
+            <h2>Moving notes from the road.</h2>
+          </div>
+          <div class="col-lg-6 reveal-up reveal-delay-1">
+            <p class="section-note">Add a YouTube, Vimeo, or direct MP4/WebM video link and this section will play it inside the website. It is made for short clips, walking scenes, restaurant moments, and quiet travel memories.</p>
+          </div>
+        </div>
+
+        <div class="video-stage reveal-up reveal-delay-2">
+          <div class="video-frame-card">
+            <div class="video-player" id="videoPlayer">
+              <div class="video-placeholder">
+                <i class="bi bi-play-circle"></i>
+                <h3>Add your travel video link</h3>
+                <p>Paste a YouTube, Vimeo, MP4, WebM, or OGG video URL below and press Play Video.</p>
+              </div>
+            </div>
+            <form class="video-link-form" id="videoLinkForm">
+              <label class="visually-hidden" for="videoLinkInput">Video link</label>
+              <input id="videoLinkInput" type="url" placeholder="Paste YouTube, Vimeo, or MP4 video link here" aria-label="Paste video link">
+              <button type="submit"><i class="bi bi-play-fill"></i> Play Video</button>
+            </form>
+            <p class="video-help">Permanent setup: replace the sample links in the HTML with your own travel video URLs.</p>
+          </div>
+
+          <div class="video-copy-card">
+            <span class="section-tag">Video journal</span>
+            <h3>Short clips can keep the sound, motion, and mood of a place.</h3>
+            <p>Use this area for small travel films, street walks, hotel views, restaurant clips, train rides, or sunset moments. The layout works well for personal updates, not commercial promotion.</p>
+            <div class="video-playlist">
+              <button type="button" data-video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
+                <span>01</span>
+                <strong>Sample MP4 clip</strong>
+                <small>Replace with your travel video</small>
+              </button>
+              <button type="button" data-video="https://www.youtube.com/watch?v=LXb3EKWsInQ">
+                <span>02</span>
+                <strong>Sample YouTube link</strong>
+                <small>Works with normal YouTube links</small>
+              </button>
+              <button type="button" data-video="https://player.vimeo.com/video/76979871">
+                <span>03</span>
+                <strong>Sample Vimeo link</strong>
+                <small>Works with Vimeo links too</small>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="thoughts-desk section-space" id="thoughts">
+      <div class="container">
+        <div class="thought-shell reveal-up">
+          <div class="thought-image">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=85" alt="Travel notebook and map on table">
+          </div>
+          <div class="thought-copy">
+            <span class="section-tag">Thoughts</span>
+            <div class="quote-mark">“</div>
+            <h2>Some places ask you to rush. Others quietly teach you to slow down.</h2>
+            <p>These notes are for the feelings that don’t fit inside a city guide: a mood, a street corner, a quiet meal, or one sentence written before sleep.</p>
+            <div class="thought-tabs" role="tablist" aria-label="Thought note filters">
+              <button class="active" type="button">Sentiments</button>
+              <button type="button">Small lessons</button>
+              <button type="button">Remembered details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-row reveal-up reveal-delay-1">
+          <article>
+            <span>01</span>
+            <p>Write the small thing first. It is usually the thing I forget fastest.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <p>A city is easier to remember when I save one sound from it.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <p>Photos show the view. Notes save the feeling behind the view.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-panel" id="subscribe">
+      <div class="container">
+        <div class="subscribe-card reveal-up">
+          <div>
+            <span class="section-tag">Follow along</span>
+            <h2>Get new notes when they are added.</h2>
+            <p>For friends, family, and anyone who enjoys quiet travel stories.</p>
+          </div>
+          <form class="subscribe-form" id="subscribeForm">
+            <label class="visually-hidden" for="emailInput">Email address</label>
+            <input type="email" id="emailInput" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5">
+          <a class="footer-brand" href="#home"><span><i class="bi bi-compass"></i></span>The Joyful Explorer</a>
+          <p>A personal travel journal for real experiences, observed and remembered.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3>Pages</h3>
+          <a href="#home">Home</a>
+          <a href="#journal">Journal</a>
+          <a href="#cities">Cities</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3>Notes</h3>
+          <a href="#restaurants">Restaurants</a>
+          <a href="#photos">Photos</a>
+          <a href="#videos">Videos</a>
+          <a href="#thoughts">Thoughts</a>
+        </div>
+        <div class="col-lg-3">
+          <h3>Latest memory</h3>
+          <div class="footer-memory">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=400&q=80" alt="Paris latest memory thumbnail">
+            <p>Paris evening walk, river air, and a page written before sleep.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> The Joyful Explorer. Notes From The Road.</span>
+        <a href="#home">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
